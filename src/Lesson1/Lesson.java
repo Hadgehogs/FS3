@@ -2,6 +2,10 @@ package Lesson1;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.math.*;
+
+
+
 
 public class Lesson {
     public static void main(String[] args) {
@@ -10,12 +14,18 @@ public class Lesson {
     String secondSample="<client>(Какие то данные)<data></data></client>";
     String thirdSample="<client>(Какие то данные)<data>Иванов Иван Иванович;79991113344</data></client>";
 
-    String firstResult = HideUserData_NewVersion(firstSample);
-    String secondResult = HideUserData_NewVersion(secondSample);
-    String thirdResult = HideUserData_NewVersion(thirdSample);
-    System.out.print(firstSample+"  ---->  "+firstResult+"\n");
-    System.out.print(secondSample+"  ---->  "+secondResult+"\n");
-    System.out.print(thirdSample+"  ---->  "+thirdResult+"\n");
+//    String firstResult = HideUserData_NewVersion(firstSample);
+//    String secondResult = HideUserData_NewVersion(secondSample);
+//    String thirdResult = HideUserData_NewVersion(thirdSample);
+//    System.out.print(firstSample+"  ---->  "+firstResult+"\n");
+//    System.out.print(secondSample+"  ---->  "+secondResult+"\n");
+//    System.out.print(thirdSample+"  ---->  "+thirdResult+"\n");
+//
+
+
+
+
+        //c=(int)(Math.pow((double)(a+b), (double)2));
 
     }
     //Урок со звездочкой
