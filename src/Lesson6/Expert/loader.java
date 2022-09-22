@@ -11,11 +11,16 @@ public class loader {
         System.out.println("Вторая задача:");
         Car goodCar=new Car(6000);
         CarShop carShop=new CarShop(goodCar);
-        carShop.sellCar();
+        //carShop.sellCar();
         System.out.println("------------------------");
 
-        Car badCar=new Car(-6000);
+        Car badCar=new Car(6000);
         carShop=new CarShop(badCar);
-        carShop.sellCar();
+        //carShop.sellCar();
+        System.out.println(goodCar.hashCode());
+        goodCar.setPrice(10000);
+        System.out.println(goodCar.hashCode());
+        //System.out.println(badCar.hashCode());
+
     }
 }

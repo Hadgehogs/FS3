@@ -104,13 +104,25 @@ public class TfinReport {
     }
 
     public static void main(String[] args) throws IOException, URISyntaxException {
-        DataGenerator.createReports();
-        URL resURI = TfinReport.class.getClassLoader().getResource("");
-        String resPath = resURI.toString();
-        LoadFromFiles(resURI.toURI());
+        //DataGenerator.createReports();
+        String resPath="file:/C:/Java_Projects/RawData";
+        long startTime = System.currentTimeMillis();
+        LoadFromFiles(new URI(resPath));
+        long stopTime = System.currentTimeMillis();
+
+        System.out.println("Время чтения данных "+Long.toString((stopTime-startTime)));
+
         String shopName = "pyterochka";
+        startTime = System.currentTimeMillis();
         getTotalsPerMonthByShop(shopName);
+        stopTime = System.currentTimeMillis();
+        System.out.println("Время обработки "+Long.toString((stopTime-startTime)));
+        System.out.println("Обработано записей "+Integer.toString(dataTable.size()));
+
         System.out.println("                ----------------------------------------------              ");
+        startTime = System.currentTimeMillis();
         getTotalsCreditsByShops();
+        stopTime = System.currentTimeMillis();
+        System.out.println("Время обработки "+Long.toString((stopTime-startTime)));
     }
 }

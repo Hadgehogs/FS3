@@ -9,7 +9,7 @@ public class Human {
             this.fHuman = new Human();
         }
 
-        HumanBuilder name(String value){
+        protected HumanBuilder name(String value){
             fHuman.setName(value);
             return this;
         }

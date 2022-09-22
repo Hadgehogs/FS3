@@ -20,7 +20,7 @@ public class DataGenerator {
     private static final String[] SHOPS = {"pyterochka", "perekrestok", "ydoma", "okey"};
     private static final String REPORT_HEADER = "магазин;доход;расход;дата";
     private static final int COUNT_REPORTS = 12;
-    private static final int COUNT_REPORT_RECORDS = 28;
+    private static final int COUNT_REPORT_RECORDS = 280000;
     private static final int COUNT_DAYS = 28;
     private static final int MINIMUM_SUM_RECORD = 10000;
     private static final int MAXIMUM_SUM_RECORD = 100000;
